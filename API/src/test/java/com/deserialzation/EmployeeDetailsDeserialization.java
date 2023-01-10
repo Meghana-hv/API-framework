@@ -15,9 +15,7 @@ public class EmployeeDetailsDeserialization {
 	@Test
 	public void deserialization() throws JsonParseException, JsonMappingException, IOException {
 		ObjectMapper map=new ObjectMapper();
-		
 		EmployeeDetails e = map.readValue(new File(".\\EmployeeDetails.json"), EmployeeDetails.class);
-		
 		System.out.println();
 		System.out.println(e.getEname()+" "+e.getId()+" "+e.getPhoneno()+" "+e.getEmail()+" "+e.getClass());
 		

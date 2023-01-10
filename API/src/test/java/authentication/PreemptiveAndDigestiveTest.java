@@ -24,8 +24,7 @@ public class PreemptiveAndDigestiveTest {
 		.contentType(ContentType.JSON)
 		.log().all();
 	}
-	
-	
+		
 	@Test
 	public void digestiveTest() {
 	

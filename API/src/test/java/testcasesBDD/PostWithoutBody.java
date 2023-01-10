@@ -19,6 +19,7 @@ public class PostWithoutBody {
 	    Response response = post("/addProject");
 	    
 	    response.getStatusCode();
+	
 	    
 	    response.then().log().all();
 	    

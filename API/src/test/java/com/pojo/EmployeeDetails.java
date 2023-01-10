@@ -7,7 +7,6 @@ public class EmployeeDetails {
 	long phoneno;
 	String email;
 	
-	
 	//Create constructor for initialization
 	public EmployeeDetails(String ename, String id, long phoneno, String email) {
 		this.ename=ename;
@@ -20,8 +19,6 @@ public class EmployeeDetails {
 		
 	}
 	
-	
-
 //Generate geters and setters
 	public String getEname() {
 		return ename;
@@ -61,10 +58,6 @@ public class EmployeeDetails {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
-	
-	
-
 	
 
 }

@@ -2,6 +2,8 @@ package parameter;
 
 import org.testng.annotations.Test;
 
+import io.restassured.response.Response;
+
 import static io.restassured.RestAssured.*;
 
 public class QueryTest {
@@ -10,11 +12,14 @@ public class QueryTest {
 		
 		baseURI="https://reqres.in/";
 		
-		given()
+		Response res = given()
 		.queryParam("page", "2")
 		.when()
 		.get("api/users")
-		.then().log().all();
+		.then().log().all()
+		.extract().response();
+		
+		res.asString();
 	}
 
 }

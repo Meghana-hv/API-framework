@@ -3,6 +3,7 @@ package differentformofObjects;
 import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;
 import static io.restassured.RestAssured.port;
+import static org.testng.Assert.assertEquals;
 
 import java.util.HashMap;
 
@@ -34,6 +35,8 @@ public class HashMapTest {
 		.log().all()
 		.assertThat()
 		.statusCode(201);
+		
+		
 		
 	}
 

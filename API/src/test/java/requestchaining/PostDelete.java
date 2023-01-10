@@ -26,10 +26,7 @@ public class PostDelete {
 		.pathParam("Id", pid)
 		.delete("projects/{Id}")
 		.then().assertThat().statusCode(204);
-		
-		
-		
-		
+				
 	}
 
 }

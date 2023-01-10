@@ -1,6 +1,5 @@
 package validation;
 
-import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.port;
 import static io.restassured.RestAssured.when;
 
@@ -15,7 +14,9 @@ import io.restassured.response.Response;
 public class HeaderTest {
 	@Test
 	public void header() {
-		baseURI="http://localhost";
+		
+		
+		//baseURI="http://localhost";
 		port=8084;
 
 		String header="Origin";
@@ -42,8 +43,7 @@ public class HeaderTest {
 		Assert.assertTrue(flag);
 		
 
-		 
-		 
+		
 	}
 }
 
